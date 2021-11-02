@@ -1,36 +1,38 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "gotipath/storage",
+    "description": "This is my package storage",
     "keywords": [
-        ":vendor_name",
-        ":package_slug"
+        "gotipath",
+        "storage"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/gotipath/storage",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Sohel Mia",
+            "email": "sohelcse1999@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "league/flysystem": "^2.3",
+        "league/flysystem-sftp": "^2.2"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
-        "pestphp/pest": "^1.20",
-        "spatie/ray": "^1.28",
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.3",
         "vimeo/psalm": "^4.8"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "Gotipath\\Storage\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Gotipath\\Storage\\Tests\\": "tests"
         }
     },
     "scripts": {
