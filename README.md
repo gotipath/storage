@@ -1,6 +1,8 @@
 # Gotipath Object storage
 
-Gotipath Storage is a file storage library for PHP. It provides one interface to interact with FTP/SFTP. When you use this package, you're protected from vendor lock-in, That mean you can connect to any FTP/SFTP storage. Also it's comes with base URL option to connect Gotipath CDN.
+Gotipath Storage is a file storage library for PHP. It provides one interface to interact with FTP/SFTP. When you use
+this package, you're protected from vendor lock-in, That mean you can connect to any FTP/SFTP storage. Also it's comes
+with base URL option to connect Gotipath CDN.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gotipath/storage.svg?style=flat-square)](https://packagist.org/packages/gotipath/storage)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/gotipath/storage/run-tests?label=tests)](https://github.com/gotipath/storage/actions?query=workflow%3ATests+branch%3Amaster)
@@ -33,7 +35,7 @@ $storage = new Storage('sftp', [
     'port' => 22,
     'root' => '/pub',
     'timeout' => 30,
-]);
+],$baseUrl='https://cdn.gotipath.com');
 
 ```
 
