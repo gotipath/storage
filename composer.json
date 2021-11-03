@@ -1,9 +1,13 @@
 {
     "name": "gotipath/storage",
-    "description": "This is my package storage",
+    "description": "Gotipath",
+    "version": "1.0",
     "keywords": [
         "gotipath",
-        "storage"
+        "storage",
+        "gotipath CDN",
+        "Gotipath object storage",
+        "Gotipath FTP storage"
     ],
     "homepage": "https://github.com/gotipath/storage",
     "license": "MIT",
@@ -15,7 +19,7 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^7.3|7.4|8.0",
         "league/flysystem": "^2.3",
         "league/flysystem-sftp": "^2.2"
     },

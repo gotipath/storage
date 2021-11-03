@@ -19,14 +19,28 @@ composer require gotipath/storage
 ## Usage
 
 ```php
-$skeleton = new Gotipath\Storage();
-echo $skeleton->echoPhrase('Hello, Gotipath!');
+require_once __DIR__ . '/vendor/autoload.php';
+
+$storage = new Storage('sftp', [
+    'host' => 'ftp.fas.xyx.com',
+    'username' => 'sftp/ftp username',
+    'password' => 'sftp/ftp password',
+    //if you connecting ssh
+    // 'privateKey' => '/path/to/privateKey',
+//            'password' => 'encryption-password',
+    'port' => 22,
+    'root' => '/pub',
+    'timeout' => 30,
+]);
+
 ```
 
-## Testing
+## create directory
 
-```bash
-composer test
+```php
+    $path = 'uploads/testdir';
+    $config = []; // optional
+    $storage->makeDirectory($path, $config);
 ```
 
 ## Changelog
