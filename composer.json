@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "php": "^7.3|7.4|8.0",
+        "php": "^7.3",
         "league/flysystem": "^2.3",
         "league/flysystem-sftp": "^2.2"
     },
