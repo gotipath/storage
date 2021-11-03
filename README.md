@@ -47,6 +47,24 @@ $storage = new Storage('sftp', [
     $storage->makeDirectory($path, $config);
 ```
 
+## get file
+
+```php
+    $storage->get($path);
+```
+
+## multipart/formdata upload
+
+```php
+    $inputFile = $_FILES['file'];
+
+    $path = 'uploads/'.$inputFile['name'];
+
+    $temp = $_FILES["file"]["tmp_name"];
+
+    $storage->upload($path,$temp);
+```
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
